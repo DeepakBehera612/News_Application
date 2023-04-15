@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indian News Web App By Deepak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:purple;">
+
+    <div style="border:solid 2px; background-color:yellow; color: black; position: fixed; width: 100%;">
+        <center>
+            <h1>Indian News App</h1>
+        </center>
+    </div>
+
+    <div class="container">
+        <br />
+        <br />
+        {% for i in case.articles %}
+        <div class="container" style="color: white;">
+            <br />            
+            <h4><strong style="color:yellow;">Author : </strong>{{i.author}}</h4>
+            <h4><strong style="color:yellow;">Title : </strong>{{i.title}}</h4>
+            <h5><strong style="color:yellow;">Description : </strong>{{i.description}}</h5>
+            <h4><strong style="color:yellow;">Published At : </strong>{{i.publishedAt}}</h4>
+            <h4><strong style="color:yellow;">Content : </strong>{{i.content}}</h4>
+            <h4><strong style="color:yellow;">More : </strong><a href="">{{i.url}}</a></h4>
+            <br />
+            <img src={{i.urlToImage}} width="100%" height="300" alt="News App">
+        </div>
+        {% endfor %}
+        <br />
+    </div>
+    <div style="border:solid 2px; background-color:black; color:white; position:static; width: 100%;">
+        <center>
+            <h6>Copyright &copy; {{ now.year }} News App, Develop by Deepak</h6>
+        </center>
+
+    </div>       
+</body>
+
+</html>

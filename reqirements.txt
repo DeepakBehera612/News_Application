@@ -1,0 +1,9 @@
+
+# Module Name                Version
+
+Flask           ==            2.1.2
+Flask-RESTful   ==            0.3.9
+pymongo         ==            4.1.1
+Flask-PyMongo   ==            2.3.0
+requests        ==            2.28.1
+python-dotenv   ==            1.0.0
